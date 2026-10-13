@@ -52,7 +52,7 @@ export default class MenuComponent extends Component {
                             this.state.hospitales.map((hospital, index) => {
                                 return (<li key={index}>
                                     <NavLink className="dropdown-item"
-                                    to={"/doctores/" + hospital.idhospital}>
+                                    to={"/doctores/" + hospital.idHospital}>
                                         {hospital.nombre}
                                     </NavLink>
                                 </li>)
