@@ -8,8 +8,7 @@ export default class HospitalesComponent extends Component {
     }
 
     loadHospitales = () => {
-        //UNA PROMESA NO ES UN METODO, ES UN OBJETO
-        this.service.getHospitales.then(result => {
+        this.service.getHospitales().then(result => {
             this.setState({
                 hospitales: result
             })
